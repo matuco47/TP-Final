@@ -1,0 +1,13 @@
+[
+    {
+        "_DispositivoEcologico__nombre": "Heladera Ecologica",
+        "_DispositivoEcologico__stock": 10,
+        "_DispositivoEcologico__precio": 500.0
+    },
+    {
+        "_DispositivoEcologico__nombre": "Panel Solar 300W",
+        "_DispositivoEcologico__stock": 5,
+        "_DispositivoEcologico__precio": 300.0,
+        "_PanelSolar__potencia": 300.0
+    }
+]

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Panel de Sustentabilidad</title>
+    </head>
+    <body>
+        <h1>Panel de Sustentabilidad</h1>
+        <div>
+            <h2>Métricas de Sustentabilidad</h2>
+            <ul>
+                <li>Emision total: {{ emision_total }}</li>
+                <li>Planta con Mayor Emisión: {{ planta_mayor_emicion }}</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Gráficos de Sustentabilidad</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Planta</td>
+                        <td>Emicion</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for planta, consumo in emicionPlantas.items %}
+                        <tr>
+                            <td>{{ planta }}</td>
+                            <td>{{ consumo }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    </body>
+</html>
